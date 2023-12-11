@@ -1,0 +1,631 @@
+\hypertarget{main_8cpp}{}\doxysection{C\+:/\+Users/\+Rahil Sanghavi/\+Desktop/\+IS F311 Computer Graphics/\+Assignment 2/2020\+A7\+PS2052\+H\+\_\+\+CG\+\_\+\+A2/main.cpp File Reference}
+\label{main_8cpp}\index{C:/Users/Rahil Sanghavi/Desktop/IS F311 Computer Graphics/Assignment 2/2020A7PS2052H\_CG\_A2/main.cpp@{C:/Users/Rahil Sanghavi/Desktop/IS F311 Computer Graphics/Assignment 2/2020A7PS2052H\_CG\_A2/main.cpp}}
+{\ttfamily \#include $<$GL/glut.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8cpp_a1ce7c516538704e5b04a99450edc572f}{GL\+\_\+\+SILENCE\+\_\+\+DEPRECATION}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_aa6b444b00ce1997b232d92175077b7ac}{draw\+Cube}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a420024328c988e35b301320283b701f5}{draw\+Cube1}} (GLfloat difX, GLfloat difY, GLfloat difZ, GLfloat ambX=0, GLfloat ambY=0, GLfloat ambZ=0, GLfloat shine=50)
+\begin{DoxyCompactList}\small\item\em Draws a cube with the specified material properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_af0467a562d2ddaf8b2458b7a91ce6afb}{drawpyramid}} (GLfloat difX, GLfloat difY, GLfloat difZ, GLfloat ambX, GLfloat ambY, GLfloat ambZ, GLfloat shine)
+\begin{DoxyCompactList}\small\item\em Draws a pyramid with the specified diffuse and ambient lighting properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a6d08381d9bed27af1b383db63233bad7}{polygon}} (GLfloat difX, GLfloat difY, GLfloat difZ, GLfloat ambX, GLfloat ambY, GLfloat ambZ, GLfloat shine)
+\begin{DoxyCompactList}\small\item\em Draws a polygon with the specified diffuse and ambient colors and shininess. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ae017d1174d8ffd30f3b4cdf0a4ab35c9}{polygon\+Line}} (GLfloat difX, GLfloat difY, GLfloat difZ, GLfloat ambX, GLfloat ambY, GLfloat ambZ, GLfloat shine)
+\begin{DoxyCompactList}\small\item\em Draws a polygonal line in 3D space. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a24d6b26dc52d260fec9d1daa452b04cc}{draw\+Sphere}} (GLfloat difX, GLfloat difY, GLfloat difZ, GLfloat ambX, GLfloat ambY, GLfloat ambZ, GLfloat shine=90)
+\begin{DoxyCompactList}\small\item\em Draws a sphere with the specified diffuse and ambient colors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a1edd3f8dcd1d621176403c42db6cf587}{cupboard}} ()
+\begin{DoxyCompactList}\small\item\em Represents a cupboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a39ad14f07723d1ea53c7b5e97681f485}{cupboard2}} ()
+\begin{DoxyCompactList}\small\item\em Draws a cupboard/almari in the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a24131516f49fbf233a60867dee34f6d6}{mid\+Wall}} ()
+\begin{DoxyCompactList}\small\item\em Function to perform mid-\/wall operation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_aa3f0c2c9736978164572453950784fa1}{whiteboard}} ()
+\begin{DoxyCompactList}\small\item\em Function to initialize the whiteboard. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a971bf8e442084d37410b85fdb3276f89}{room}} ()
+\begin{DoxyCompactList}\small\item\em This function represents a room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a17b6dc408125bb92d21ce4105f09647b}{bed}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a3a2b82aee04ea2ab091c8c1494282b2e}{baggage}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a0df472261d6be0025cff9bfa90d649ca}{window}} ()
+\begin{DoxyCompactList}\small\item\em Renders a window with various stripes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_acca4da11de6c89fa715a8fe957106b2e}{study\+Table}} ()
+\begin{DoxyCompactList}\small\item\em This function represents a study table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a39e2e1acee011f522af1cf6f03f823d9}{chair}} ()
+\begin{DoxyCompactList}\small\item\em This function represents a chair. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a89c632b7c2280297457ebe19e6053e43}{flap}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a6a79bf45d098b31b4aa96a6e199fe001}{spherical\+Object}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_acb1dd8088a7d2f3c863cf8ea74a72262}{light\+Bulb1}} ()
+\begin{DoxyCompactList}\small\item\em Function to control light bulb 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ac492fe24f2300bcff07cb83a0f982ed0}{light\+Bulb2}} ()
+\begin{DoxyCompactList}\small\item\em Function to control the second light bulb. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a76a9d4c4f26d97d07f7af72e4d0382a0}{light\+One}} ()
+\begin{DoxyCompactList}\small\item\em Function to handle light one. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ac4b0f868a067c7f10b6b0e1c5b0a251e}{light\+Two}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}{display}} (void)
+\item 
+void \mbox{\hyperlink{main_8cpp_a377e97dbdf343d40a615f233f3b173ba}{my\+Keyboard\+Func}} (unsigned char key, int x, int \mbox{\hyperlink{main_8cpp_ab927965981178aa1fba979a37168db2a}{y}})
+\item 
+void \mbox{\hyperlink{main_8cpp_a3e73164d603e05e94b8eedeb557a3245}{animate}} ()
+\item 
+void \mbox{\hyperlink{main_8cpp_aa0e90add76a959c1a9bfb13bd7286b35}{full\+Screen}} (int w, int h)
+\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_afa723ee14244c1d431a47cc348083abb}{red\+Flag}} = true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_a4f61c56c3300e24117e3536e9920408b}{switch\+One}} = false
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_abc07d99e57f419561cfdb6934eb20f74}{switch\+Two}} =false
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_ad5e4e6cad31b5468ea93f2ab09325ee4}{amb1}} =true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_a52047025ed1272566a16f07756c34cc0}{diff1}} =true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_ac722df34e32c5cc30701f6087a5706bb}{spec1}} =true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_a5017f84e3cd5f4f309896bf115ee816b}{amb2}} =true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_a7e9669e466ae43f07ec1e5182bc7b702}{diff2}} =true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_a66c3d043b7139762545cc46bacae6341}{spec2}} =true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_a2d3b6918c17e91a5cac71e11eea4110c}{amb3}} =true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_a2fc3d171effc1fed6ed8215b7973a581}{diff3}} =true
+\item 
+GLboolean \mbox{\hyperlink{main_8cpp_a77e4d00dcc45f8cab6719a0608197745}{spec3}} =true
+\item 
+double \mbox{\hyperlink{main_8cpp_a4ecfe0d8bf6a487068073a194c7a94b3}{window\+Height}} =800
+\item 
+double \mbox{\hyperlink{main_8cpp_a768ff56ab4d7137cbdd37ffd28de3498}{window\+Width}} =550
+\item 
+double \mbox{\hyperlink{main_8cpp_a9ffbb9c73fce0ac089a5aad3db53207e}{eyeX}} =5.\+0
+\item 
+double \mbox{\hyperlink{main_8cpp_a0c83bfcf8d1db26c4eba06051227ac76}{eyeY}} =2.\+0
+\item 
+double \mbox{\hyperlink{main_8cpp_a9d3cdcd8ca88ac7cc4d1b43ee49c947b}{eyeZ}} =15.\+0
+\item 
+double \mbox{\hyperlink{main_8cpp_a43baec2442edb0faacf02b6e272b1dbd}{refX}} = 0
+\item 
+double \mbox{\hyperlink{main_8cpp_a6e3aa59d1fbd30eac76fcad0b2bce5d5}{refY}} =0
+\item 
+double \mbox{\hyperlink{main_8cpp_a817b03d04cd481582de921525ae4f6a9}{refZ}} =0
+\item 
+double \mbox{\hyperlink{main_8cpp_aca81c35c21e3a5f7f3a8d24504e76664}{theta}} = 90.\+0
+\item 
+double \mbox{\hyperlink{main_8cpp_ab927965981178aa1fba979a37168db2a}{y}} = 1.\+36
+\item 
+double \mbox{\hyperlink{main_8cpp_ab3e6ed577a7c669c19de1f9c1b46c872}{z}} = 7.\+97888
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{main_8cpp_a1ce7c516538704e5b04a99450edc572f}\label{main_8cpp_a1ce7c516538704e5b04a99450edc572f}} 
+\index{main.cpp@{main.cpp}!GL\_SILENCE\_DEPRECATION@{GL\_SILENCE\_DEPRECATION}}
+\index{GL\_SILENCE\_DEPRECATION@{GL\_SILENCE\_DEPRECATION}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{GL\_SILENCE\_DEPRECATION}{GL\_SILENCE\_DEPRECATION}}
+{\footnotesize\ttfamily \#define GL\+\_\+\+SILENCE\+\_\+\+DEPRECATION}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a3e73164d603e05e94b8eedeb557a3245}\label{main_8cpp_a3e73164d603e05e94b8eedeb557a3245}} 
+\index{main.cpp@{main.cpp}!animate@{animate}}
+\index{animate@{animate}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{animate()}{animate()}}
+{\footnotesize\ttfamily void animate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a3a2b82aee04ea2ab091c8c1494282b2e}\label{main_8cpp_a3a2b82aee04ea2ab091c8c1494282b2e}} 
+\index{main.cpp@{main.cpp}!baggage@{baggage}}
+\index{baggage@{baggage}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{baggage()}{baggage()}}
+{\footnotesize\ttfamily void baggage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a17b6dc408125bb92d21ce4105f09647b}\label{main_8cpp_a17b6dc408125bb92d21ce4105f09647b}} 
+\index{main.cpp@{main.cpp}!bed@{bed}}
+\index{bed@{bed}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{bed()}{bed()}}
+{\footnotesize\ttfamily void bed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draws a bed with a bed body, blanket, and blanket side. \mbox{\Hypertarget{main_8cpp_a39e2e1acee011f522af1cf6f03f823d9}\label{main_8cpp_a39e2e1acee011f522af1cf6f03f823d9}} 
+\index{main.cpp@{main.cpp}!chair@{chair}}
+\index{chair@{chair}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{chair()}{chair()}}
+{\footnotesize\ttfamily void chair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function represents a chair. 
+
+It defines the behavior and properties of a chair. \mbox{\Hypertarget{main_8cpp_a1edd3f8dcd1d621176403c42db6cf587}\label{main_8cpp_a1edd3f8dcd1d621176403c42db6cf587}} 
+\index{main.cpp@{main.cpp}!cupboard@{cupboard}}
+\index{cupboard@{cupboard}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{cupboard()}{cupboard()}}
+{\footnotesize\ttfamily void cupboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Represents a cupboard. 
+
+This function represents a cupboard and performs some operations related to it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a39ad14f07723d1ea53c7b5e97681f485}\label{main_8cpp_a39ad14f07723d1ea53c7b5e97681f485}} 
+\index{main.cpp@{main.cpp}!cupboard2@{cupboard2}}
+\index{cupboard2@{cupboard2}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{cupboard2()}{cupboard2()}}
+{\footnotesize\ttfamily void cupboard2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws a cupboard/almari in the scene. 
+
+This function draws a cupboard/almari using Open\+GL transformations and the draw\+Cube1 function. It consists of a main body, a middle vertical stripline, and two handles.
+
+\begin{DoxyNote}{Note}
+This function assumes that the draw\+Cube1 function is defined and implemented elsewhere.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{main_8cpp_a420024328c988e35b301320283b701f5}{draw\+Cube1}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{main_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}\label{main_8cpp_a4ea013001a5fb47853d0fab8f8de35cd}} 
+\index{main.cpp@{main.cpp}!display@{display}}
+\index{display@{display}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void display (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_aa6b444b00ce1997b232d92175077b7ac}\label{main_8cpp_aa6b444b00ce1997b232d92175077b7ac}} 
+\index{main.cpp@{main.cpp}!drawCube@{drawCube}}
+\index{drawCube@{drawCube}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{drawCube()}{drawCube()}}
+{\footnotesize\ttfamily void draw\+Cube (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a420024328c988e35b301320283b701f5}\label{main_8cpp_a420024328c988e35b301320283b701f5}} 
+\index{main.cpp@{main.cpp}!drawCube1@{drawCube1}}
+\index{drawCube1@{drawCube1}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{drawCube1()}{drawCube1()}}
+{\footnotesize\ttfamily void draw\+Cube1 (\begin{DoxyParamCaption}\item[{GLfloat}]{difX,  }\item[{GLfloat}]{difY,  }\item[{GLfloat}]{difZ,  }\item[{GLfloat}]{ambX = {\ttfamily 0},  }\item[{GLfloat}]{ambY = {\ttfamily 0},  }\item[{GLfloat}]{ambZ = {\ttfamily 0},  }\item[{GLfloat}]{shine = {\ttfamily 50} }\end{DoxyParamCaption})}
+
+
+
+Draws a cube with the specified material properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em difX} & The diffuse color component for the X-\/axis. \\
+\hline
+{\em difY} & The diffuse color component for the Y-\/axis. \\
+\hline
+{\em difZ} & The diffuse color component for the Z-\/axis. \\
+\hline
+{\em ambX} & The ambient color component for the X-\/axis. Default is 0. \\
+\hline
+{\em ambY} & The ambient color component for the Y-\/axis. Default is 0. \\
+\hline
+{\em ambZ} & The ambient color component for the Z-\/axis. Default is 0. \\
+\hline
+{\em shine} & The shininess factor of the material. Default is 50. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_af0467a562d2ddaf8b2458b7a91ce6afb}\label{main_8cpp_af0467a562d2ddaf8b2458b7a91ce6afb}} 
+\index{main.cpp@{main.cpp}!drawpyramid@{drawpyramid}}
+\index{drawpyramid@{drawpyramid}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{drawpyramid()}{drawpyramid()}}
+{\footnotesize\ttfamily void drawpyramid (\begin{DoxyParamCaption}\item[{GLfloat}]{difX,  }\item[{GLfloat}]{difY,  }\item[{GLfloat}]{difZ,  }\item[{GLfloat}]{ambX,  }\item[{GLfloat}]{ambY,  }\item[{GLfloat}]{ambZ,  }\item[{GLfloat}]{shine }\end{DoxyParamCaption})}
+
+
+
+Draws a pyramid with the specified diffuse and ambient lighting properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em difX} & The X component of the diffuse lighting color. \\
+\hline
+{\em difY} & The Y component of the diffuse lighting color. \\
+\hline
+{\em difZ} & The Z component of the diffuse lighting color. \\
+\hline
+{\em ambX} & The X component of the ambient lighting color. \\
+\hline
+{\em ambY} & The Y component of the ambient lighting color. \\
+\hline
+{\em ambZ} & The Z component of the ambient lighting color. \\
+\hline
+{\em shine} & The shininess factor of the pyramid. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a24d6b26dc52d260fec9d1daa452b04cc}\label{main_8cpp_a24d6b26dc52d260fec9d1daa452b04cc}} 
+\index{main.cpp@{main.cpp}!drawSphere@{drawSphere}}
+\index{drawSphere@{drawSphere}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{drawSphere()}{drawSphere()}}
+{\footnotesize\ttfamily void draw\+Sphere (\begin{DoxyParamCaption}\item[{GLfloat}]{difX,  }\item[{GLfloat}]{difY,  }\item[{GLfloat}]{difZ,  }\item[{GLfloat}]{ambX,  }\item[{GLfloat}]{ambY,  }\item[{GLfloat}]{ambZ,  }\item[{GLfloat}]{shine = {\ttfamily 90} }\end{DoxyParamCaption})}
+
+
+
+Draws a sphere with the specified diffuse and ambient colors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em difX} & The X component of the diffuse color. \\
+\hline
+{\em difY} & The Y component of the diffuse color. \\
+\hline
+{\em difZ} & The Z component of the diffuse color. \\
+\hline
+{\em ambX} & The X component of the ambient color. \\
+\hline
+{\em ambY} & The Y component of the ambient color. \\
+\hline
+{\em ambZ} & The Z component of the ambient color. \\
+\hline
+{\em shine} & The shininess of the sphere (default value is 90). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a89c632b7c2280297457ebe19e6053e43}\label{main_8cpp_a89c632b7c2280297457ebe19e6053e43}} 
+\index{main.cpp@{main.cpp}!flap@{flap}}
+\index{flap@{flap}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{flap()}{flap()}}
+{\footnotesize\ttfamily void flap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_aa0e90add76a959c1a9bfb13bd7286b35}\label{main_8cpp_aa0e90add76a959c1a9bfb13bd7286b35}} 
+\index{main.cpp@{main.cpp}!fullScreen@{fullScreen}}
+\index{fullScreen@{fullScreen}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{fullScreen()}{fullScreen()}}
+{\footnotesize\ttfamily void full\+Screen (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_acb1dd8088a7d2f3c863cf8ea74a72262}\label{main_8cpp_acb1dd8088a7d2f3c863cf8ea74a72262}} 
+\index{main.cpp@{main.cpp}!lightBulb1@{lightBulb1}}
+\index{lightBulb1@{lightBulb1}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{lightBulb1()}{lightBulb1()}}
+{\footnotesize\ttfamily void light\+Bulb1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to control light bulb 1. 
+
+This function is responsible for controlling the behavior of light bulb 1. It performs the necessary operations to turn the light bulb on or off.
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ac492fe24f2300bcff07cb83a0f982ed0}\label{main_8cpp_ac492fe24f2300bcff07cb83a0f982ed0}} 
+\index{main.cpp@{main.cpp}!lightBulb2@{lightBulb2}}
+\index{lightBulb2@{lightBulb2}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{lightBulb2()}{lightBulb2()}}
+{\footnotesize\ttfamily void light\+Bulb2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to control the second light bulb. 
+
+This function is responsible for controlling the second light bulb. It performs the necessary operations to turn the light bulb on or off.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a76a9d4c4f26d97d07f7af72e4d0382a0}\label{main_8cpp_a76a9d4c4f26d97d07f7af72e4d0382a0}} 
+\index{main.cpp@{main.cpp}!lightOne@{lightOne}}
+\index{lightOne@{lightOne}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{lightOne()}{lightOne()}}
+{\footnotesize\ttfamily void light\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to handle light one. 
+
+This function is responsible for handling light one in the program. It performs the necessary operations related to light one. \mbox{\Hypertarget{main_8cpp_ac4b0f868a067c7f10b6b0e1c5b0a251e}\label{main_8cpp_ac4b0f868a067c7f10b6b0e1c5b0a251e}} 
+\index{main.cpp@{main.cpp}!lightTwo@{lightTwo}}
+\index{lightTwo@{lightTwo}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{lightTwo()}{lightTwo()}}
+{\footnotesize\ttfamily void light\+Two (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a24131516f49fbf233a60867dee34f6d6}\label{main_8cpp_a24131516f49fbf233a60867dee34f6d6}} 
+\index{main.cpp@{main.cpp}!midWall@{midWall}}
+\index{midWall@{midWall}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{midWall()}{midWall()}}
+{\footnotesize\ttfamily void mid\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to perform mid-\/wall operation. 
+
+This function performs the mid-\/wall operation. It is used for a specific purpose in the program.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a377e97dbdf343d40a615f233f3b173ba}\label{main_8cpp_a377e97dbdf343d40a615f233f3b173ba}} 
+\index{main.cpp@{main.cpp}!myKeyboardFunc@{myKeyboardFunc}}
+\index{myKeyboardFunc@{myKeyboardFunc}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{myKeyboardFunc()}{myKeyboardFunc()}}
+{\footnotesize\ttfamily void my\+Keyboard\+Func (\begin{DoxyParamCaption}\item[{unsigned char}]{key,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a6d08381d9bed27af1b383db63233bad7}\label{main_8cpp_a6d08381d9bed27af1b383db63233bad7}} 
+\index{main.cpp@{main.cpp}!polygon@{polygon}}
+\index{polygon@{polygon}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{polygon()}{polygon()}}
+{\footnotesize\ttfamily void polygon (\begin{DoxyParamCaption}\item[{GLfloat}]{difX,  }\item[{GLfloat}]{difY,  }\item[{GLfloat}]{difZ,  }\item[{GLfloat}]{ambX,  }\item[{GLfloat}]{ambY,  }\item[{GLfloat}]{ambZ,  }\item[{GLfloat}]{shine }\end{DoxyParamCaption})}
+
+
+
+Draws a polygon with the specified diffuse and ambient colors and shininess. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em difX} & The X component of the diffuse color. \\
+\hline
+{\em difY} & The Y component of the diffuse color. \\
+\hline
+{\em difZ} & The Z component of the diffuse color. \\
+\hline
+{\em ambX} & The X component of the ambient color. \\
+\hline
+{\em ambY} & The Y component of the ambient color. \\
+\hline
+{\em ambZ} & The Z component of the ambient color. \\
+\hline
+{\em shine} & The shininess of the polygon. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ae017d1174d8ffd30f3b4cdf0a4ab35c9}\label{main_8cpp_ae017d1174d8ffd30f3b4cdf0a4ab35c9}} 
+\index{main.cpp@{main.cpp}!polygonLine@{polygonLine}}
+\index{polygonLine@{polygonLine}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{polygonLine()}{polygonLine()}}
+{\footnotesize\ttfamily void polygon\+Line (\begin{DoxyParamCaption}\item[{GLfloat}]{difX,  }\item[{GLfloat}]{difY,  }\item[{GLfloat}]{difZ,  }\item[{GLfloat}]{ambX,  }\item[{GLfloat}]{ambY,  }\item[{GLfloat}]{ambZ,  }\item[{GLfloat}]{shine }\end{DoxyParamCaption})}
+
+
+
+Draws a polygonal line in 3D space. 
+
+This function takes the differences in X, Y, and Z coordinates, as well as the ambient color and shine factor, and draws a polygonal line in 3D space.
+
+
+\begin{DoxyParams}{Parameters}
+{\em difX} & The difference in X coordinates. \\
+\hline
+{\em difY} & The difference in Y coordinates. \\
+\hline
+{\em difZ} & The difference in Z coordinates. \\
+\hline
+{\em ambX} & The ambient color component for X. \\
+\hline
+{\em ambY} & The ambient color component for Y. \\
+\hline
+{\em ambZ} & The ambient color component for Z. \\
+\hline
+{\em shine} & The shine factor for the polygonal line. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a971bf8e442084d37410b85fdb3276f89}\label{main_8cpp_a971bf8e442084d37410b85fdb3276f89}} 
+\index{main.cpp@{main.cpp}!room@{room}}
+\index{room@{room}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{room()}{room()}}
+{\footnotesize\ttfamily void room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function represents a room. 
+
+It is responsible for defining the behavior and properties of a room. \mbox{\Hypertarget{main_8cpp_a6a79bf45d098b31b4aa96a6e199fe001}\label{main_8cpp_a6a79bf45d098b31b4aa96a6e199fe001}} 
+\index{main.cpp@{main.cpp}!sphericalObject@{sphericalObject}}
+\index{sphericalObject@{sphericalObject}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{sphericalObject()}{sphericalObject()}}
+{\footnotesize\ttfamily void spherical\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_acca4da11de6c89fa715a8fe957106b2e}\label{main_8cpp_acca4da11de6c89fa715a8fe957106b2e}} 
+\index{main.cpp@{main.cpp}!studyTable@{studyTable}}
+\index{studyTable@{studyTable}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{studyTable()}{studyTable()}}
+{\footnotesize\ttfamily void study\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function represents a study table. 
+
+It performs the necessary operations to simulate a study table.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_aa3f0c2c9736978164572453950784fa1}\label{main_8cpp_aa3f0c2c9736978164572453950784fa1}} 
+\index{main.cpp@{main.cpp}!whiteboard@{whiteboard}}
+\index{whiteboard@{whiteboard}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{whiteboard()}{whiteboard()}}
+{\footnotesize\ttfamily void whiteboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to initialize the whiteboard. 
+
+This function initializes the whiteboard for drawing. It sets up the necessary variables and data structures. \mbox{\Hypertarget{main_8cpp_a0df472261d6be0025cff9bfa90d649ca}\label{main_8cpp_a0df472261d6be0025cff9bfa90d649ca}} 
+\index{main.cpp@{main.cpp}!window@{window}}
+\index{window@{window}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{window()}{window()}}
+{\footnotesize\ttfamily void window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders a window with various stripes. 
+
+This function is responsible for rendering a window with multiple stripes using Open\+GL. It uses the draw\+Cube1 function to draw the stripes.
+
+\begin{DoxyNote}{Note}
+This function assumes that the necessary Open\+GL context has been set up before calling it. 
+\end{DoxyNote}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_ad5e4e6cad31b5468ea93f2ab09325ee4}\label{main_8cpp_ad5e4e6cad31b5468ea93f2ab09325ee4}} 
+\index{main.cpp@{main.cpp}!amb1@{amb1}}
+\index{amb1@{amb1}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{amb1}{amb1}}
+{\footnotesize\ttfamily GLboolean amb1 =true}
+
+\mbox{\Hypertarget{main_8cpp_a5017f84e3cd5f4f309896bf115ee816b}\label{main_8cpp_a5017f84e3cd5f4f309896bf115ee816b}} 
+\index{main.cpp@{main.cpp}!amb2@{amb2}}
+\index{amb2@{amb2}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{amb2}{amb2}}
+{\footnotesize\ttfamily GLboolean amb2 =true}
+
+\mbox{\Hypertarget{main_8cpp_a2d3b6918c17e91a5cac71e11eea4110c}\label{main_8cpp_a2d3b6918c17e91a5cac71e11eea4110c}} 
+\index{main.cpp@{main.cpp}!amb3@{amb3}}
+\index{amb3@{amb3}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{amb3}{amb3}}
+{\footnotesize\ttfamily GLboolean amb3 =true}
+
+\mbox{\Hypertarget{main_8cpp_a52047025ed1272566a16f07756c34cc0}\label{main_8cpp_a52047025ed1272566a16f07756c34cc0}} 
+\index{main.cpp@{main.cpp}!diff1@{diff1}}
+\index{diff1@{diff1}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{diff1}{diff1}}
+{\footnotesize\ttfamily GLboolean diff1 =true}
+
+\mbox{\Hypertarget{main_8cpp_a7e9669e466ae43f07ec1e5182bc7b702}\label{main_8cpp_a7e9669e466ae43f07ec1e5182bc7b702}} 
+\index{main.cpp@{main.cpp}!diff2@{diff2}}
+\index{diff2@{diff2}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{diff2}{diff2}}
+{\footnotesize\ttfamily GLboolean diff2 =true}
+
+\mbox{\Hypertarget{main_8cpp_a2fc3d171effc1fed6ed8215b7973a581}\label{main_8cpp_a2fc3d171effc1fed6ed8215b7973a581}} 
+\index{main.cpp@{main.cpp}!diff3@{diff3}}
+\index{diff3@{diff3}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{diff3}{diff3}}
+{\footnotesize\ttfamily GLboolean diff3 =true}
+
+\mbox{\Hypertarget{main_8cpp_a9ffbb9c73fce0ac089a5aad3db53207e}\label{main_8cpp_a9ffbb9c73fce0ac089a5aad3db53207e}} 
+\index{main.cpp@{main.cpp}!eyeX@{eyeX}}
+\index{eyeX@{eyeX}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{eyeX}{eyeX}}
+{\footnotesize\ttfamily double eyeX =5.\+0}
+
+\mbox{\Hypertarget{main_8cpp_a0c83bfcf8d1db26c4eba06051227ac76}\label{main_8cpp_a0c83bfcf8d1db26c4eba06051227ac76}} 
+\index{main.cpp@{main.cpp}!eyeY@{eyeY}}
+\index{eyeY@{eyeY}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{eyeY}{eyeY}}
+{\footnotesize\ttfamily double eyeY =2.\+0}
+
+\mbox{\Hypertarget{main_8cpp_a9d3cdcd8ca88ac7cc4d1b43ee49c947b}\label{main_8cpp_a9d3cdcd8ca88ac7cc4d1b43ee49c947b}} 
+\index{main.cpp@{main.cpp}!eyeZ@{eyeZ}}
+\index{eyeZ@{eyeZ}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{eyeZ}{eyeZ}}
+{\footnotesize\ttfamily double eyeZ =15.\+0}
+
+\mbox{\Hypertarget{main_8cpp_afa723ee14244c1d431a47cc348083abb}\label{main_8cpp_afa723ee14244c1d431a47cc348083abb}} 
+\index{main.cpp@{main.cpp}!redFlag@{redFlag}}
+\index{redFlag@{redFlag}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{redFlag}{redFlag}}
+{\footnotesize\ttfamily GLboolean red\+Flag = true}
+
+\mbox{\Hypertarget{main_8cpp_a43baec2442edb0faacf02b6e272b1dbd}\label{main_8cpp_a43baec2442edb0faacf02b6e272b1dbd}} 
+\index{main.cpp@{main.cpp}!refX@{refX}}
+\index{refX@{refX}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{refX}{refX}}
+{\footnotesize\ttfamily double refX = 0}
+
+\mbox{\Hypertarget{main_8cpp_a6e3aa59d1fbd30eac76fcad0b2bce5d5}\label{main_8cpp_a6e3aa59d1fbd30eac76fcad0b2bce5d5}} 
+\index{main.cpp@{main.cpp}!refY@{refY}}
+\index{refY@{refY}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{refY}{refY}}
+{\footnotesize\ttfamily double refY =0}
+
+\mbox{\Hypertarget{main_8cpp_a817b03d04cd481582de921525ae4f6a9}\label{main_8cpp_a817b03d04cd481582de921525ae4f6a9}} 
+\index{main.cpp@{main.cpp}!refZ@{refZ}}
+\index{refZ@{refZ}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{refZ}{refZ}}
+{\footnotesize\ttfamily double refZ =0}
+
+\mbox{\Hypertarget{main_8cpp_ac722df34e32c5cc30701f6087a5706bb}\label{main_8cpp_ac722df34e32c5cc30701f6087a5706bb}} 
+\index{main.cpp@{main.cpp}!spec1@{spec1}}
+\index{spec1@{spec1}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{spec1}{spec1}}
+{\footnotesize\ttfamily GLboolean spec1 =true}
+
+\mbox{\Hypertarget{main_8cpp_a66c3d043b7139762545cc46bacae6341}\label{main_8cpp_a66c3d043b7139762545cc46bacae6341}} 
+\index{main.cpp@{main.cpp}!spec2@{spec2}}
+\index{spec2@{spec2}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{spec2}{spec2}}
+{\footnotesize\ttfamily GLboolean spec2 =true}
+
+\mbox{\Hypertarget{main_8cpp_a77e4d00dcc45f8cab6719a0608197745}\label{main_8cpp_a77e4d00dcc45f8cab6719a0608197745}} 
+\index{main.cpp@{main.cpp}!spec3@{spec3}}
+\index{spec3@{spec3}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{spec3}{spec3}}
+{\footnotesize\ttfamily GLboolean spec3 =true}
+
+\mbox{\Hypertarget{main_8cpp_a4f61c56c3300e24117e3536e9920408b}\label{main_8cpp_a4f61c56c3300e24117e3536e9920408b}} 
+\index{main.cpp@{main.cpp}!switchOne@{switchOne}}
+\index{switchOne@{switchOne}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{switchOne}{switchOne}}
+{\footnotesize\ttfamily GLboolean switch\+One = false}
+
+\mbox{\Hypertarget{main_8cpp_abc07d99e57f419561cfdb6934eb20f74}\label{main_8cpp_abc07d99e57f419561cfdb6934eb20f74}} 
+\index{main.cpp@{main.cpp}!switchTwo@{switchTwo}}
+\index{switchTwo@{switchTwo}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{switchTwo}{switchTwo}}
+{\footnotesize\ttfamily GLboolean switch\+Two =false}
+
+\mbox{\Hypertarget{main_8cpp_aca81c35c21e3a5f7f3a8d24504e76664}\label{main_8cpp_aca81c35c21e3a5f7f3a8d24504e76664}} 
+\index{main.cpp@{main.cpp}!theta@{theta}}
+\index{theta@{theta}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{theta}{theta}}
+{\footnotesize\ttfamily double theta = 90.\+0}
+
+\mbox{\Hypertarget{main_8cpp_a4ecfe0d8bf6a487068073a194c7a94b3}\label{main_8cpp_a4ecfe0d8bf6a487068073a194c7a94b3}} 
+\index{main.cpp@{main.cpp}!windowHeight@{windowHeight}}
+\index{windowHeight@{windowHeight}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{windowHeight}{windowHeight}}
+{\footnotesize\ttfamily double window\+Height =800}
+
+\mbox{\Hypertarget{main_8cpp_a768ff56ab4d7137cbdd37ffd28de3498}\label{main_8cpp_a768ff56ab4d7137cbdd37ffd28de3498}} 
+\index{main.cpp@{main.cpp}!windowWidth@{windowWidth}}
+\index{windowWidth@{windowWidth}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{windowWidth}{windowWidth}}
+{\footnotesize\ttfamily double window\+Width =550}
+
+\mbox{\Hypertarget{main_8cpp_ab927965981178aa1fba979a37168db2a}\label{main_8cpp_ab927965981178aa1fba979a37168db2a}} 
+\index{main.cpp@{main.cpp}!y@{y}}
+\index{y@{y}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily double y = 1.\+36}
+
+\mbox{\Hypertarget{main_8cpp_ab3e6ed577a7c669c19de1f9c1b46c872}\label{main_8cpp_ab3e6ed577a7c669c19de1f9c1b46c872}} 
+\index{main.cpp@{main.cpp}!z@{z}}
+\index{z@{z}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily double z = 7.\+97888}
+
