@@ -1,7 +1,7 @@
 # Hostel-Room-3D
 Here is the little glimpse of visualisation of my hostel room using openGL in 3D.
 
-![alt text]([http://url/to/img.png](https://github.com/ScarcePulkit/Hostel-Room-3D/blob/main/html/output.png))
+![Hostel Image](https://github.com/ScarcePulkit/Hostel-Room-3D/blob/main/html/output.png)
 
 ## Here are the keys:
 ### To move Eye
