@@ -5,7 +5,7 @@ Here is the little glimpse of visualisation of my hostel room using openGL in 3D
 
 ## Here are the keys:
 ### To move Eye
-w: Up <br />
+w: Up  <br />
 s: Down <br />
 a: Left<br />
 d: Right<br />
